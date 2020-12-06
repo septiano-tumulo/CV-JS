@@ -24,21 +24,30 @@ function panggil(){
 }
 panggil();
 
-
-function mode(){
-    document.body.style.background="#00001a"
-    document.querySelector('.kepala').style.backgroundColor="#000040";
-
+function mode() {
+  document.body.classList.add('bg-active');
+  document.getElementById("sw-on").classList.add('active');
+  document.getElementById("sw-off").classList.remove('active');  
+  document.body.style.background="linear-gradient(to left, #000050, #167792)"
+  document.querySelector('.kepala').style.backgroundColor="#000040";
 }
+function dark() {
+  document.body.classList.remove('bg-active');
+  document.getElementById("sw-off").classList.add('active');
+  document.getElementById("sw-on").classList.remove('active');  
+  document.body.style.background="#000000"
+  document.querySelector('.kepala').style.backgroundColor="#2C3539";
+}
+
 function validateform() {
-    if(document.forms["formPendaftaran"]["name"].value==""){
+    if(document.forms["formcontact"]["name"].value==""){
         alert("Nama Tidak boleh kosong");
-        document.forms["formPendaftaran"]["name"].focus();
+        document.forms["formcontact"]["name"].focus();
         return false;
     }
-    if(document.forms["formPendaftaran"]["email"].value==""){
+    if(document.forms["formcontact"]["email"].value==""){
         alert("Email Tidak boleh kosong");
-        document.forms["formPendaftaran"]["email"].focus();
+        document.forms["formcontact"]["email"].focus();
         return false;
     }
     else{
@@ -53,6 +62,12 @@ function validateform() {
 
 
 //PERCOBAAN
+
+// function mode(){
+//     document.body.style.background="#00001a"
+//     document.querySelector('.kepala').style.backgroundColor="#000040";
+// }
+
 // let title=document.getElementsByTagName('h1')[0].innerText;
 //  console.log(title);
 

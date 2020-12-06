@@ -12,8 +12,9 @@
     <input id="check" type="checkbox">
     <div class="bars">
         <ul>
-            <li><button class="mode" onclick="mode()">MODE</button></li>
-            <li><a class="#biography" href="">Biography</a></li>
+            <li><button id="sw-on" class="switch" onclick="dark()">Dark</button></li>
+            <li><button id="sw-off" class="switch active" onclick="mode()">Normal</button></li>
+            <li><a href="#biography">Biography</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#employement">Employment</a></li>
             <li><a href="#award">Award</a></li>
@@ -28,7 +29,8 @@
             <h1><a>TEST JAVASCRIPT</a></h1>
             </center>
             <ul>
-                <li><button class="mode" onclick="mode()">MODE</button></li>
+                <li><button id="sw-on" class="switch" onclick="dark()">Dark</button></li>
+                <li><button id="sw-off" class="switch active" onclick="mode()">Normal</button></li>
                 <li><a href="#biography">Biography</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#employement">Employment</a></li>
@@ -204,7 +206,7 @@
         <hr>
         <br><br><br>
             <h1 style="line-height:1.5em;">Contact Me </h1>
-            <form name="formPendaftaran" onsubmit="return validateform()">
+            <form name="formcontact" onsubmit="return validateform()">
             <label for="name">Your name : </label>
             <input type="text" name="name">
             <br>
@@ -232,234 +234,3 @@
 </html>
 
 
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-    <title>CV Septiano Rivo Chandra Tumulo</title>
-</head>
-<body> 
-    <input id="check" type="checkbox">
-    <div class="bars">
-        <ul>
-            <li><button class="mode" onclick="mode()">MODE</button></li>
-            <li><a class="" href="">Biography</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#employement">Employment</a></li>
-            <li><a href="#award">Award</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact Me</a></li>
-        </ul>
-    </div>
-
-    <header>
-        <div class="kepala">
-            <center>
-            <h1><a>TEST JAVASCRIPT</a></h1>
-            </center>
-            <ul>
-                <li><button class="mode" onclick="mode()">MODE</button></li>
-                <li><a href="">Biography</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#employement">Employment</a></li>
-                <li><a href="#award">Award</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact Me</a></li>
-            </ul>
-            <label class="mobile" for="check"><i class="fas fa-bars fa-2x"></i></label>
-        </div>
-    </header>
-        
-    <center>
-    <table cellspacing="10">
-        <tbody>
-            <tr>
-                <td class="boxmodel">
-                    <img src="foto/gambarprofil.png" alt="profil" width="200" />
-                </td>
-                <td class="nama">
-                    <h1>Septiano Rivo Chandra Tumulo</h1>
-                    <h2>Student</h2>
-                
-                <p class="desc">Computer Science University Klabat, Airmadidi, Sulawesi Utara, Indonesia, 95371
-                    <br>Email :
-                    <i>S21910222@student.unklab.ac.id</i>
-                    <br>Phone : +6282296986238</br>
-
-                    <hr>
-                </p>
-            </td>
-            </tr>
-        </tbody>
-    </table>
-    <br><br>
-    <hr>
-    </center>
-    
-    <br><br>
-    
-    <section class="bio">
-        <h1>Research Interest :</h1>
-        <ol>
-            <p style="line-height:2em;">Web Programming</p>
-            <p style="line-height:1em;">Game Developer</p>
-            <p style="line-height:2em;">Web Design</p>
-            <p style="line-height:1em;">System analyst</p>
-            <p style="line-height:2em;">Nerworking</p>
-        </ol>
-    </section>
-    <br class="br">    
-    <hr>
-    <center>
-    <section class="kotak1">
-    <p>
-    <br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br><section id="education"></section><p class="gariswarna">|<br>|<br>V<br><br></p>
-    </p>
-    </section>
-    </center>
-    <center>
-       
-    <section class="education">
-        <hr>
-        <br><br><br>
-        
-        <h1>Education :</h1>
-            <p>
-               <a class="selector1" href="http://www.unklab.ac.id/">Universitas Klabat</a>
-                Student in computer Science
-            </p>
-    </section>
-    
-    <section id="employement"></section>
-    <br>
-    <td>
-        <img src="foto/uk.jpg" alt="Universitas Klabat" width="300" height=""/>
-    </td>
-    <br><br><p class="garis2"><br>|<br>V<br></p><br>
-    
-    <section class="employement">
-        
-        <h1>Employment :</h1>
-        <table cellspacing="20">
-            <tbody>
-                <tr class="harvest">
-                    <td>
-                        <strong>Harvest Computer</strong>
-                    <br>
-                    engineering
-                    </td>
-                    <td>
-                        Manado, Indonesia
-                        <br>
-                        2018
-                    </td>
-                </tr>
-
-            </tbody>
-        </table>
-
-    </section>
-    <td>
-    <img src="foto/computer.jpg" alt="computer" width="300" height="200"/>
-    <img src="foto/printer2.jpg" alt="printer2" width="300" height="200"/>
-    </td>
-    </center>
-    <br><br><br><br><br>
-    <hr>
-    <br>
-    <center>
-    <section class="kotak1">    
-        <p>
-            <br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br><section class="mid" id="award"></section><p class="gariswarna">|<br>|<br>V<br><br></p>
-        </p>
-    </section>
-        </center>
-    <hr>
-    <section class="mid" id="award">
-        <h1>Award :</h1><br>
-                <a href="https://bnsp.go.id"><strong>Indonesian Professional Certification Authority</strong></a>
-                <br>
-                <p style="line-height:1.3em;">
-                Competent in the area of <u>Networking technical and computer system</u>. in the area of <u>KKN level II in the competence of computer engineering and network</u>. 2019
-                </p>
-    </section>
-    <section id="skills"></section>
-        <center>
-        <br><br><p class="garis2"><br>|<br>V</p><br><br>
-        </center>
-    <section id="skills">
-        <h1>Skills :</h1>
-        <table cellspacing="20">
-            <tbody>
-                <tr>
-                    <td>
-                        <table cellspacing="10" class="skill">
-                            <tbody>
-                                <tr>
-                                    <td>Hardware</td>
-                                    <td class="bintang">&#10030; &#10030; &#10030; &#10030; &#10030; </td>
-                                </tr>
-                                <tr>
-                                    <td>HTML</td>
-                                    <td class="bintang">&#10030; &#10030; &#10030; &#10030; </td>
-                                </tr>
-                                <tr>
-                                    <td>C++</td>
-                                    <td class="bintang">&#10030; &#10030; &#10030; &#10030; &#10030; </td>
-                                </tr>
-                                <tr>
-                                    <td>Network</td>
-                                    <td class="bintang">&#10030; &#10030; &#10030;</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </td>
-                </tr>
-            </tbody>
-
-
-        </table>
-
-    </section>
-    <br><br>
-    <center>
-    <section id="contact">
-        <hr>
-        <section class="kotak1">    
-            <p>
-                <br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br><section id="education"></section><p class="gariswarna">|<br>|<br>V<br><br></p>
-            </p>
-        </section>
-        <hr>
-        <br><br><br>
-        <h1 style="line-height:1.5em;">Contact Me </h1>
-        <form>
-            <label for="name">Your name : </label>
-            <input type="text" name="email" id="email" required>
-            <br>
-            <br>
-            <label for="email">Your email :</label>
-            <input type="email" name="email" id="email" required>
-            <br>
-            <br>
-            <label style="line-height:3.5em;" for="message">Message</label>
-            <br>
-            <textarea name="message" id="message" cols="30" rows="10" placeholder="type your message ......"></textarea>
-            <br>
-            <br>
-            <input onclick="respon" type="submit" name="submit">
-            <p></p>
-        </form>
-        <br><br>
-    </section>
-    </center>
-
-    
-    <script src="index.js"></script>
-
-</body>
-</html> -->
