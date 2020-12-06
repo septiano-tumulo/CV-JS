@@ -1,0 +1,324 @@
+/*HEADER*/
+*{
+    padding:0;
+    margin:0;
+}
+header{
+    height: 70px;
+}
+header h1{
+    display: inline-block;
+    float: left;
+    padding: 16px 24px;
+}
+header ul li a{
+    color: white;
+}
+header ul li a:hover{
+    color: #f84744;
+}
+
+header h1 a:hover{
+    color: #f84744;
+}
+header ul{
+    float: right;
+
+}
+.bars{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -300px;
+    width: 300px;
+    background-color: rgba(16, 47, 80, .9);
+    transition: 1s;
+
+}
+.bars ul li a{
+    color: white;
+}
+.bars ul li{
+    padding: 24px;
+}
+.bars ul li:hover{
+    background-color: #f84744;
+}
+#check:checked ~ .bars{
+    left: 0;
+}
+header ul li{
+    margin: 3px;
+    color: white;
+    font-size: 15px;
+    padding:10px;
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+}
+.kepala{
+    background-color: rgb(31, 24, 68); 
+    font-size: 13px;  
+    margin: 0 auto;   
+    width: 100%;
+    height: 60px;
+    color: white;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+
+}
+.kepala::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.mobile{
+    float: right;
+    display: none;
+    padding:18px;
+}
+#check{
+    display: none;
+}
+
+
+/* BODY */
+
+body{
+    background: linear-gradient(to left, #000050, #167792);
+
+    color: white;
+    font-family: 'Noto Sans KR', sans-serif,'Lobster', cursive,'Oswald', sans-serif;
+}
+/* #000040 */
+/* #00001a */
+.mode{
+    background-color: rgb(13, 13, 44);
+    color: white;
+}
+.desc{
+    font-size: 18px;
+}
+
+.nama h1{
+    margin-top: 40px;
+}
+.boxmodel{
+    display: block;
+    padding-right: 10px;
+    border: 1px;
+    margin-top: 50px;
+}
+
+.kotak1:hover{
+   color: #f84744;
+   transition: 0.35s;
+}
+.mid h1{
+    font-size: 25px;
+    margin-top: 2em;
+    margin-left: 50px;
+}
+.mid p{
+    font-family: cursive,'Lobster', cursive,'Oswald', sans-serif;
+    font-size: 20px;
+    margin-left: 120px;
+    margin-right: 30%;
+}
+.mid a:hover{
+    color: black;
+    background-color: white;
+}
+.mid a{
+    font-size: 20px;
+    color: #f84744;
+    font-family: cursive,'Lobster', cursive,'Oswald', sans-serif;
+    margin-left: 120px;
+}
+#skills{
+    margin-left: 50px;
+}
+#skills{
+    font-size: 15px;
+    margin-left: 50px;
+    
+}
+.skill{
+    font-family: cursive,'Lobster', cursive,'Oswald', sans-serif;
+    margin-left: 40px;
+    font-size: 20px;
+}
+nav a:hover{
+    color: #000015;
+    background-color: white;
+}
+
+nav a{
+    display: inline;
+    font-family: ;
+    margin: 3px;
+    color: white;
+    border: 1px solid white;
+    padding: 4px 10px 4px 10px;
+}
+
+.selector1:hover{
+    color: #000015;
+    background-color: white;
+
+}
+
+.rubah{
+    font-family: 'Henny Penny', cursive,'Lobster', cursive,'Oswald', sans-serif;    
+    font-size: 30px;
+    width: 100%;
+    height: 50px;
+    color: white;
+    background:linear-gradient(to right, #000050, #167792);
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+}
+.education{
+    font-size: 15px;
+}
+.education p{
+    font-family: cursive,'Lobster', cursive,'Oswald', sans-serif;
+    font-size: 30px;
+    padding: 10px;
+}
+.employement h1{
+    font-size: 23px;
+}
+.harvest td strong{
+    color: #f84744;
+}
+.harvest{
+    font-family: cursive,'Lobster', cursive,'Oswald', sans-serif;
+    font-size: 30px;
+}
+.garis2:hover{
+    color: #f84744;
+}
+.selector1{
+    color: #f84744;
+}
+
+.bintang{
+    color: yellow;
+}
+
+.bio{
+    margin-left: 55px;
+}
+.bio h1{
+    font-size: 20px;
+}
+.bio ol p{
+    font-family: cursive,'Lobster', cursive,'Oswald', sans-serif; 
+    padding-left: 60px;
+    font-size: 30px;
+}
+
+
+
+@media screen and (max-width: 927px){
+    /* HEADER */
+    .kepala{
+        font-size: 7px;
+    }
+    .mobile{
+        display: block;
+    }
+    header ul{
+        display: none;
+    }
+
+    /* BODY */
+    body{
+        font-size: 10px;
+    }
+    .boxmodel img{
+        width: 100px;
+        height: 100px;        
+    }
+    .nama h1{
+        margin-top: 40px;
+        font-size: 12px;
+    }
+    .nama h2{
+        font-size: 11px;
+    }
+    .desc{
+        font-size: 9px;
+    }
+    nav a{
+        display: inline-block;
+        font-size: 6px;
+        margin: 3px;
+        color: white;
+        border: 1px solid white;
+        padding: 3px 7px 3px 7px;
+    }
+    div.nav{
+        font-family: 'Henny Penny', cursive,'Lobster', cursive,'Oswald', sans-serif;    
+        font-size: 18px;
+        width: 100%;
+        height: 30px;
+        color: white;
+        background:linear-gradient(to right, #000050, #167792);
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        z-index: 1;
+    }
+    .bio{
+        margin-left: 30px;
+    }
+    .bio h1{
+        font-size: 10px;
+    }
+    .bio ol p{
+        padding-left: 35px;
+        font-size: 15px;
+    }
+    .education{
+        font-size: 10px;
+    }
+    .education p{
+        font-size: 13px;
+        padding: 10px;
+    }
+    .employement h1{
+        font-size: 15px;
+    }
+    .harvest{
+        font-size: 15px;
+    }
+    .mid h1{
+        font-size: 15px;
+    }
+    .mid a{
+        margin-left: 90px;
+        font-size: 13px;
+    }
+    .mid p{
+        margin-left: 90px;
+        font-size: 13px;
+        margin-right: 20%;
+    }
+    #skills h1{
+        font-size: 15px;
+    }
+    .skill{
+        margin-left: 10px;
+        font-size: 13px;
+    }
+
+
+
+
